@@ -4,7 +4,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <div id="about" className="section flex flex-col ">
+    <section id="about" className="section flex flex-col ">
       <div className="section-heading pb-16 text-center">Who Am I?</div>
       <div className="flex flex-col md:flex-row justify-around ">
         <div className="relative ">
@@ -35,7 +35,7 @@ const About = (props: Props) => {
           {/* <span className="invisible hover:visible md:cursor-pointer " >14</span> */}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

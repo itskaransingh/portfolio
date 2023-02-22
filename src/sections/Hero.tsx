@@ -4,7 +4,7 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <div className="section   flex items-center">
+    <section className="section   flex items-center">
       <div className="flex flex-col  justify-between h-full w-full items-center md:flex-row-reverse">
         <div className="relative h-[431px] w-[385px] flex justify-center items-center">
           <div className="absolute bg-gradient-radial h-full w-full  -z-[1]"></div>
@@ -50,7 +50,7 @@ const Hero = (props: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
