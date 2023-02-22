@@ -1,30 +1,10 @@
 import Image from "next/image"
 import { jakarta } from "../app/fonts"
+import { navLinks } from "../utils/data"
 
 type Props = {}
 
 const Navbar = (props: Props) => {
-
-const navlinks = [
-  {
-    title:'Who am i?',
-    href:'#about',
-  },
-  {
-    title:'Skills',
-    href:'#skills',
-  },
-  {
-    title:'Projects',
-    href:'#projects',
-  },
-  {
-    title:'Contact',
-    href:'#contact',
-  },
-  
-]
-
   return (
     <nav  className={jakarta.className + 'relative lower-glassmorphism bg-nav  h-16 shadow-md px-[132px] py-3 w-full'}>
         <div className="flex justify-between  items-center">
@@ -33,9 +13,9 @@ const navlinks = [
           </div>
           <div className="flex gap-[48px] font-semibold ">
                {
-                navlinks.map(({title,href},i)=>(
+                navLinks.map(({text,url},i)=>(
                   <div key={i}>
-                    <a href={href}>{title}</a>
+                    <a href={url}>{text}</a>
                   </div>
                 ))
                }

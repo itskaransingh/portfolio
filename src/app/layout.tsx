@@ -23,7 +23,7 @@ export default function RootLayout({
         <main>
         {children}
         </main>
-        <footer>
+        <footer className='flex justify-center items-center h-20'>
           <Footer />
         </footer>
       </body>
