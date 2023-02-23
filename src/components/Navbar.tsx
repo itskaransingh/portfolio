@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { jakarta } from "../app/fonts"
 import { navLinks } from "../utils/data"
 

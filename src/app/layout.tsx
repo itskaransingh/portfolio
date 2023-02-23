@@ -1,6 +1,7 @@
 import { preahvihear } from './fonts'
-import { Footer, Navbar } from '../components'
+import { Footer, Navbar, SideSocial } from '../components'
 import './globals.css'
+import SideNav from '../components/SideNav'
 
 
 
@@ -20,9 +21,15 @@ export default function RootLayout({
         <header className='fixed w-screen z-30 '>
           <Navbar />
         </header>
+        <aside>
+          <SideNav />
+        </aside>
         <main>
         {children}
         </main>
+        <aside>
+        <SideSocial />
+        </aside>
         <footer className='flex justify-center items-center h-20'>
           <Footer />
         </footer>
