@@ -1,7 +1,7 @@
 import { preahvihear } from './fonts'
 import { Footer, Navbar, SideSocial } from '../components'
 import './globals.css'
-import SideNav from '../components/SideNav'
+import SideNav from '../components/UI/SideNav'
 
 
 

@@ -2,10 +2,10 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { jakarta } from "../app/fonts"
-import { navLinks } from "../utils/data"
+import { jakarta } from "../../app/fonts"
+import { navLinks } from "../../utils/data"
 import {motion} from 'framer-motion'
-import { navVariants } from "../utils/motion"
+import { navVariants } from "../../utils/motion"
 
 type Props = {}
 

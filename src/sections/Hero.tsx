@@ -10,7 +10,7 @@ const Hero = (props: Props) => {
   return (
     <section className="section    flex items-center">
       <motion.div 
-        initial="hidden"
+        initial="show"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
         variants={staggerContainer}

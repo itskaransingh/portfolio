@@ -44,6 +44,7 @@ export const navVariants = {
       transition: {
         staggerChildren,
         delayChildren,
+        
       },
     },
   });

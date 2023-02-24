@@ -1,5 +1,8 @@
+'use client'
+
 import { poppins } from "../app/fonts";
-import { Project } from "../components";
+import { Project} from "../components";
+import { SectionTitle } from "../components/UI";
 import {featuredprojects} from '../utils/data'
 
 type Props = {};
@@ -13,7 +16,10 @@ const Projects = (props: Props) => {
       id="projects"
       className="section items-center flex  flex-col"
     >
-      <h2 className="section-heading  text-center">My Projects</h2>
+    
+    <SectionTitle>
+         My Projects
+    </SectionTitle>
 
       <div className={poppins.className + ' flex flex-col overflow-hidden w-full gap-16'}>
         {featuredprojects.map((fp) => (

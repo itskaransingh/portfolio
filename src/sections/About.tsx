@@ -1,11 +1,17 @@
+'use client'
+
 import Image from "next/image";
+import { SectionTitle } from "../components/UI";
 
 type Props = {};
 
 const About = (props: Props) => {
   return (
     <section id="about" className="section flex flex-col ">
-      <h2 className="section-heading  text-center">Who Am I?</h2>
+      <SectionTitle>
+       Who am i?
+      </SectionTitle>
+    
       <div className="flex flex-col max-md:gap-4 md:flex-row max-md:items-center justify-around ">
         <div className="relative ">
           <span className="absolute -left-20 -top-20 bg-gradient-radial md:h-[500px] md:w-[430px]"></span>
