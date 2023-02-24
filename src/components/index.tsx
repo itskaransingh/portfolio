@@ -1,1 +1,1 @@
-export {default as Project} from './Projects/Project'
+export {default as Project} from './projects/Project'

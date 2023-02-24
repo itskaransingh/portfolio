@@ -1,6 +1,6 @@
 
 import Image from "next/image"
-import { SectionTitle } from "../components/UI"
+import { SectionTitle } from "../components/ui"
 
 type Props = {}
 
