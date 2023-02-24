@@ -4,7 +4,7 @@ type Props = {}
 
 const Contact = (props: Props) => {
   return (
-    <section id="contact" className="section items-center lg:min-h-[650px]  flex  flex-col">
+    <section id="contact" className="section items-center md:min-h-[650px]  flex  flex-col">
         <h2 className="section-heading">Contact</h2> 
         <div className="flex flex-col text-center justify-center gap-4 items-center">
           <div className="text-secondary text-3xl">Let's be awesome together!</div>

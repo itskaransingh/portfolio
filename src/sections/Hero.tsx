@@ -4,11 +4,13 @@ type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="section   flex items-center">
+    <section className="section    flex items-center">
       <div className="flex flex-col  justify-between h-full w-full items-center md:flex-row-reverse">
-        <div className="relative h-[431px] w-[385px] flex justify-center items-center">
+        <div
+            
+         className="relative md:h-[431px] md:w-[385px] h-[400px] w-[360px] flex justify-center items-center">
           <div className="absolute bg-gradient-radial h-full w-full  -z-[1]"></div>
-          <Image src="/me.webp" alt="me" height={300} width={300} />
+          <Image src="/me.webp" className="" alt="me" height={300} width={300} />
         </div>
         <div className="flex flex-col gap-1">
           <div className="leading-8 pb-2">

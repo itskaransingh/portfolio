@@ -13,9 +13,9 @@ const Projects = (props: Props) => {
       id="projects"
       className="section items-center flex  flex-col"
     >
-      <h2 className="section-heading pb-16 text-center">My Projects</h2>
+      <h2 className="section-heading  text-center">My Projects</h2>
 
-      <div className={poppins.className + ' flex flex-col gap-16'}>
+      <div className={poppins.className + ' flex flex-col overflow-hidden w-full gap-16'}>
         {featuredprojects.map((fp) => (
           <Project fp={fp} key={fp.srno} />
         ))}

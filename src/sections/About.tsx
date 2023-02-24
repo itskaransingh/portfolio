@@ -5,14 +5,15 @@ type Props = {};
 const About = (props: Props) => {
   return (
     <section id="about" className="section flex flex-col ">
-      <h2 className="section-heading pb-16 text-center">Who Am I?</h2>
-      <div className="flex flex-col md:flex-row justify-around ">
+      <h2 className="section-heading  text-center">Who Am I?</h2>
+      <div className="flex flex-col max-md:gap-4 md:flex-row max-md:items-center justify-around ">
         <div className="relative ">
-          <span className="absolute -left-20 -top-20 bg-gradient-radial h-[500px] w-[430px]"></span>
-          <div className="relative w-3/4">
+          <span className="absolute -left-20 -top-20 bg-gradient-radial md:h-[500px] md:w-[430px]"></span>
+          <div className="relative   max-md:mx-auto w-3/4">
             <Image
+             
               src="/pic_scetch_2x.webp"
-              className="absolute  top-[-12px] hover:hidden"
+              className="absolute   max-md:top-[-9.5px] top-[-11px] "
               alt="my photo"
               height={453}
               width={377.93}

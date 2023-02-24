@@ -31,10 +31,10 @@
   
   @layer components {
     .section {
-      @apply py-11 md:pt-16 lg:pt-16 px-4 sm:px-8 md:px-20  max-w-6xl mx-auto lg:min-h-[764px];
+      @apply py-11 md:pt-16 lg:pt-16 px-5 sm:px-9 md:px-20  max-w-6xl mx-auto min-h-[760px];
     }
     .section-heading {
-      @apply text-2xl md:text-3xl xl:text-4xl inline-block my-6 font-medium;
+      @apply text-2xl md:text-3xl xl:text-4xl inline-block my-6 max-md:my-10 pb-16 max-md:pb-0 font-medium;
     }
     /* .link-outline {
       @apply outline-marrsgreen dark:outline-carrigreen;

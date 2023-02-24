@@ -8,25 +8,24 @@ const Project = ({ fp }: { fp: FP }) => {
   const isright = srno % 2 === 1;
 
   return (
-    <div>
       <div
-        className={`items-start gap-6  justify-center ${
-          isright ? "flex" : "flex flex-row-reverse"
+        className={`items-start gap-6   justify-center ${
+          isright ? "flex flex-col-reverse md:flex-row" : "flex flex-col-reverse   md:flex-row-reverse"
         }`}
         >
         {/* Text Content */}
 
         <div className={`flex flex-col `}>
-          <div className={`font-semibold flex flex-col break-words ${!isright?'text-right':''}  gap-2 pb-5`}>
+          <div className={`font-semibold flex flex-col flex-wrap break-words ${!isright?'md:text-right':''}  gap-2 pb-5`}>
             <span className="text-info text-base">Featured Project</span>
-            <div className="text-card text-3xl ">{title}</div>
+            <div className="text-card text-3xl break-words">{title}</div>
           </div>
-          <div className="relative">
-            <div className="absolute inset-0">
-              <div className={`p-6 shadow-xl ${isright? '' : 'right-48'}  w-[600px] h-[165px]  z-10  font-medium lower-glassmorphism relative text-card`}>
+          <div className="md:relative">
+            <div className="md:absolute md:inset-0">
+              <div className={`md:p-6 shadow-xl ${isright? '' : 'md:right-48'}  md:w-[600px] md:h-[165px]  z-10  font-medium lower-glassmorphism relative text-card`}>
                 {desc}
               </div>
-              <div className={`flex ${!isright?'justify-end':''} gap-2 py-2 items-center`}>
+              <div className={`flex ${!isright?'md:justify-end':''} gap-2 py-2 items-center`}>
                 <Link
                   href={liveurl}
                   target="_blank"
@@ -65,7 +64,7 @@ const Project = ({ fp }: { fp: FP }) => {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
   );
 };

@@ -5,7 +5,7 @@ type Props = {}
 
 const Footer = (props: Props) => {
   return (
-    <div className="flex justify-center items-center gap-3">
+    <div className="flex max-md:pb-[64px] justify-center items-center gap-3">
       
 
       {socialLinks.map((sl)=>(
