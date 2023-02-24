@@ -1,13 +1,21 @@
+'use client'
+
 import Image from "next/image"
 import Link from "next/link"
 import { jakarta } from "../app/fonts"
 import { navLinks } from "../utils/data"
+import {motion} from 'framer-motion'
+import { navVariants } from "../utils/motion"
 
 type Props = {}
 
 const Navbar = (props: Props) => {
   return (
-    <nav  className={jakarta.className + 'relative lower-glassmorphism bg-nav  h-16 shadow-md md:px-[132px] px-[23px] py-3 w-full'}>
+    <motion.nav 
+    variants={navVariants}
+    initial="hidden"
+    whileInView="show"
+    className={jakarta.className + 'relative lower-glassmorphism bg-nav  h-16 shadow-md md:px-[132px] px-[23px] py-3 w-full'}>
         <div className="flex justify-between  items-center">
           <div>
             <Image src='/logo.webp'  alt="my logo" height={28} width={28}/>
@@ -26,7 +34,7 @@ const Navbar = (props: Props) => {
              
           </div>
         </div>
-    </nav>
+    </motion.nav>
   )
 }
 
