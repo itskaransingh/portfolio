@@ -1,11 +1,23 @@
+'use client'
+
 import Link from "next/link"
+import {RoughNotation} from 'react-rough-notation'
 
 type Props = {}
 
 const Contact = (props: Props) => {
   return (
     <section id="contact" className="section items-center md:min-h-[650px]  flex  flex-col">
-        <h2 className="section-heading">Contact</h2> 
+     
+        <RoughNotation
+          type="underline"
+          color={`#7127BA`}
+          strokeWidth={2}
+          order={1}
+        >
+          <h2 className="section-heading">Contact</h2>
+        </RoughNotation>
+   
         <div className="flex flex-col text-center justify-center gap-4 items-center">
           <div className="text-secondary text-3xl">Let's be awesome together!</div>
           <div className="line-clamp-4 max-w-[500px]  mx-auto">

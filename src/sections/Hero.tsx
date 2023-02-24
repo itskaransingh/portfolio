@@ -9,22 +9,23 @@ type Props = {};
 const Hero = (props: Props) => {
   return (
     <section className="section    flex items-center">
-      <div className="flex flex-col  justify-between h-full w-full items-center md:flex-row-reverse">
+      <motion.div 
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        variants={staggerContainer}
+      className="flex flex-col  justify-between h-full w-full items-center md:flex-row-reverse">
         <div className="relative md:h-[431px] md:w-[385px] h-[400px] w-[360px] flex justify-center items-center">
           {/* Gradient */}
           <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+
             variants={zoomIn(0, 1)}
             className="absolute bg-gradient-radial h-full w-full  -z-[1]"
           ></motion.div>
 
           {/* Hero Image */}
           <motion.div
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: false, amount: 0.25 }}
+ 
             variants={slideIn("right", "tween", 0, 1)}
           >
             <Image
@@ -40,9 +41,7 @@ const Hero = (props: Props) => {
         {/* Hero Text Content */}
 
         <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}
+  
           variants={slideIn("left", "tween", 0, 0.8)}
           className="flex flex-col gap-1"
         >
@@ -110,7 +109,7 @@ const Hero = (props: Props) => {
           </motion.div>
           
         </motion.div>
-      </div>
+      </motion.div>
     </section>
   );
 };
