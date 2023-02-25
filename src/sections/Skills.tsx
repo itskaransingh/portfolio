@@ -1,6 +1,7 @@
 
 import Image from "next/image"
 import { SectionTitle } from "../components/ui"
+import { SkillSet } from "../components"
 
 type Props = {}
 
@@ -12,7 +13,8 @@ const Skills = (props: Props) => {
       </SectionTitle>
   <div className="items-center justify-center flex">
     <div>
-      <Image src='/skills.webp' alt="my skills" width={700} height={700}/>
+      {/* <Image src='/skills.webp' alt="my skills" width={700} height={700}/> */}
+      <SkillSet />
     </div>
   </div>
     </section>

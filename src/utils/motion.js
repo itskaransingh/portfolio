@@ -163,3 +163,26 @@ export const navVariants = {
     },
   };
 
+
+
+export const wallDrop = {
+  initial: {
+    y: '0',
+  },
+  animate: {
+    y: '0',
+    rotate: '360deg',
+    transition: {
+      duration: 1,
+      ease: 'easeOut',
+    },
+  },
+  drop: {
+    y: '10%',
+    rotate: '410deg',
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
+}

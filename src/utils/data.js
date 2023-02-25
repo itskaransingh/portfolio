@@ -110,3 +110,6 @@ export const featuredprojects = [
 ];
 
 
+const skills={
+  
+}

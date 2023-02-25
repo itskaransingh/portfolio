@@ -16,9 +16,12 @@ module.exports = {
         "card":'#CCD6F6'
       },
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);',   
+        'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);',  
+        'logo-bg-radial':'linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);' 
       },
-     
+     dropShadow:{
+      'logo':'drop-shadow(0px 1px 14px rgba(255, 255, 255, 0.55))'
+     }
     },
   },
   plugins: [
