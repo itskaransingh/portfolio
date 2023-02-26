@@ -17,7 +17,7 @@ export default function RootLayout({
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className='bg-primary text-[#ffffff]'>
+      <body className='bg-primary  text-[#ffffff]'>
         <header className='fixed w-screen z-30 '>
           <Navbar />
         </header>

@@ -7,26 +7,12 @@
       @apply scroll-smooth overflow-y-scroll;
     }
   
-    /* ===== Custom Scrollbar ===== */
+    /* ===== Custom Scrollbar =====
     /* width */
     ::-webkit-scrollbar {
-      @apply w-3;
+      display: none;
     }
   
-    /* Track */
-    ::-webkit-scrollbar-track {
-      @apply  dark:bg-primary;
-    }
-  
-    /* Handle */
-    ::-webkit-scrollbar-thumb {
-      @apply bg-[#d5d5d5];
-    }
-  
-    /* Handle on hover */
-    ::-webkit-scrollbar-thumb:hover {
-      @apply bg-[#b7b7b7] dark:bg-[#17222b];
-    }
   }
   
   @layer components {

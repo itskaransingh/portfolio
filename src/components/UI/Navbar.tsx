@@ -15,13 +15,13 @@ const Navbar = (props: Props) => {
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={jakarta.className + 'relative lower-glassmorphism bg-nav  h-16 shadow-md md:px-[132px] px-[23px] py-3 w-full'}>
+    className={jakarta.className + 'relative lower-glassmorphism bg-nav  h-16 shadow-md lg:px-[132px] md:px-[80px] px-[23px] py-3 w-full'}>
         <div className="flex justify-between  items-center">
           <div>
             <Image src='/svg/logo.svg'  alt="my logo" height={28} width={28}/>
           </div>
-          <div className="flex  max-md:hidden     bottom-3 max-md:rounded-md  left-0 right-0 md:text-base max-md:text-sm  max-md:max-w-[90%] max-md:mx-auto   font-semibold ">
-            <div className=" flex max-md:items-center h-full w-full  max-md:relative max-md:lower-glassmorphism max-md:bg-secondary gap-[48px] max-md:gap-4 max-md:justify-center max-md:py-3 max-md:px-2">
+          <div className="flex  max-lg:fixed     bottom-3 max-lg:rounded-md  left-0 right-0 md:text-base max-lg:text-sm  max-lg:max-w-[90%] max-lg:mx-auto   font-semibold ">
+            <div className=" flex max-lg:items-center h-full w-full  max-lg:relative max-lg:lower-glassmorphism max-lg:bg-secondary gap-[48px] max-md:gap-4 max-lg:justify-center max-lg:gap-8 max-lg:py-3 max-lg:px-2">
 
                {
                  navLinks.map(({text,url},i)=>(

@@ -2,7 +2,7 @@ export const socialLinks = [
   {
     id: 1,
     title: "Karan Singh's Github Profile",
-    link: "https://github.com/https://github.com/itskaransingh",
+    link: "https://github.com/itskaransingh",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -84,29 +84,29 @@ export const featuredprojects = [
     srno: 1,
     title: "Picstack - A Social Media Web App",
     img: "/projects/picstack.webp",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum facilis magnam perferendis natus liberoinventore, assumenda quidem reprehenderit, aliquam enim esse quod? Maxime nobis dolorum corporis rem laboriosam amet.",
-    lang: ["Javascript", "React", "Sanity", "Tailwind CSS"],
+    desc: "PicStack - A Social Media Web App Picstack is a social media web app in which a user can login with google oauth2.0 and can upload posts, delete posts and can also like and comment on posts of others and many other functionalities",
+    lang: ["Javascript", "React", "Sanity", "Tailwind CSS","Vite"],
     liveurl: "https://picstack26.netlify.app",
     github: "https://github.com/itskaransingh/picstack",
   },
   {
     srno: 2,
-    title: "Picstack - A Social Media Web App",
-    img: "/projects/picstack.webp",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum facilis magnam perferendis natus liberoinventore, assumenda quidem reprehenderit, aliquam enim esse quod? Maxime nobis dolorum corporis rem laboriosam amet.",
-    lang: ["Javascript", "React", "Sanity", "Tailwind CSS"],
-    liveurl: "https://picstack26.netlify.app",
-    github: "https://github.com/itskaransingh/picstack",
+    title: "Crytoverse - Statistics,News regarding Cryptocurrencies",
+    img: "/projects/cryptoverse.webp",
+    desc: "Cryptoverse is basically a platform in which a user can see live crypto stats , learn about various cryptocurrencies and can watch news of a particular cryptocurrencies . This Application is made with the help of react , redux and antdesign",
+    lang: ["Javascript", "React", "Rapid Api", "Ant Design", "Vite"],
+    liveurl: "https://crytoverse26.netlify.app/",
+    github: "https://github.com/itskaransingh/cryptoverse",
   },
-  {
-    srno: 3,
-    title: "Picstack - A Social Media Web App",
-    img: "/projects/picstack.webp",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum facilis magnam perferendis natus liberoinventore, assumenda quidem reprehenderit, aliquam enim esse quod? Maxime nobis dolorum corporis rem laboriosam amet.",
-    lang: ["Javascript", "React", "Sanity", "Tailwind CSS"],
-    liveurl: "https://picstack26.netlify.app",
-    github: "https://github.com/itskaransingh/picstack",
-  },
+  // {
+  //   srno: 3,
+  //   title: "Picstack - A Social Media Web App",
+  //   img: "/projects/cryptoverse.webp",
+  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus eum facilis magnam perferendis natus liberoinventore, assumenda quidem reprehenderit, aliquam enim esse quod? Maxime nobis dolorum corporis rem laboriosam amet.",
+  //   lang: ["Javascript", "React", "Sanity", "Tailwind CSS"],
+  //   liveurl: "https://picstack26.netlify.app",
+  //   github: "https://github.com/itskaransingh/picstack",
+  // },
 ];
 
 

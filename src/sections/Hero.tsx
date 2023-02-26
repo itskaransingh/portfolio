@@ -33,6 +33,7 @@ const Hero = (props: Props) => {
               src="/me.webp"
               className=""
               alt="me"
+              priority
               height={300}
               width={300}
             />
