@@ -8,7 +8,7 @@ type Props = {}
 
 const Contact = (props: Props) => {
   return (
-    <section id="contact" className="section items-center md:min-h-[650px]  flex  flex-col">
+    <section id="contact" className="section items-center md:min-h-[650px] min-h-[500px]  flex  flex-col">
      
      <SectionTitle>
       Contact

@@ -12,7 +12,7 @@ const SectionTitle = ({children}:Props) => {
     <motion.div
     onViewportEnter={(x)=>setshow(x as any)}
     viewport={{ once: true, amount: 0.25 }}
-    className="my-6 max-md:my-10  text-center">
+    className="md:my-6 my-4  text-center">
     <RoughNotation
         type="underline"
         color={`#7127BA`}
