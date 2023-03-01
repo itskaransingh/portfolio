@@ -80,13 +80,16 @@ const Project = ({ fp }: { fp: FP }) => {
       {/* Image Showcase Section */}
       <div className="">
         <div className=" relative rounded-lg bg-[#2B0B3A] w-[582px] h-[341px]">
-          <div className={`flex ${isright?'justify-end':'justify-start'} items-center pt-2 gap-5 `}>
+<marquee direction={`${isright?'left':'right'}`}>
+
+          <div className={`flex ${isright?'md:justify-end':'md:justify-start'} items-center pt-2 gap-5 `}>
             {
               lang?.map((l,i)=>(
                 <p className="text-sm px-2 py-0.5 rounded-md  font-semibold" key={i}>{l}</p>
               ))
             }
           </div>
+            </marquee>
           <div className={`absolute bottom-0 rounded-tl-lg overflow-hidden right-0 w-[500px] h-[300px] ${isright?'right-0 max-md:left-0':'left-0'}`}>
           <Image
                   src={img}
@@ -103,3 +106,6 @@ const Project = ({ fp }: { fp: FP }) => {
 };
 
 export default Project;
+
+
+

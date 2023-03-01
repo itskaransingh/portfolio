@@ -95,7 +95,7 @@ export const featuredprojects = [
     img: "/projects/cryptoverse.webp",
     desc: "Cryptoverse is basically a platform in which a user can see live crypto stats , learn about various cryptocurrencies and can watch news of a particular cryptocurrencies . This Application is made with the help of react , redux and antdesign",
     lang: ["Javascript", "React", "Rapid Api", "Ant Design", "Vite"],
-    liveurl: "https://crytoverse26.netlify.app/",
+    liveurl: "https://cryptoverse26.vercel.app/",
     github: "https://github.com/itskaransingh/cryptoverse",
   },
   // {
