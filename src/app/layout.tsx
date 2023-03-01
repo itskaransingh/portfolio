@@ -1,6 +1,7 @@
 import { preahvihear } from './fonts'
 import { Footer, Navbar, SideSocial,SideNav } from '../components/UI'
 import './globals.css'
+import { AnalyticsWrapper } from '../components/analytics'
 
 
 
@@ -25,6 +26,7 @@ export default function RootLayout({
         </aside>
         <main>
         {children}
+
         </main>
         <aside>
         <SideSocial />
@@ -32,6 +34,7 @@ export default function RootLayout({
         <footer className='flex justify-center items-center h-20'>
           <Footer />
         </footer>
+        <AnalyticsWrapper />
       </body>
     </html>
   )
