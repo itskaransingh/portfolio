@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import type { FP } from "../../sections/Projects";
+import type { FP } from "../sections/Projects";
 
 const Project = ({ fp }: { fp: FP }) => {
   const { desc, github, img, lang, liveurl, srno, title } = fp;

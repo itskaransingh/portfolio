@@ -1,6 +1,6 @@
 
 import Image from "next/image"
-import { SectionTitle } from "../components/ui"
+import { SectionTitle } from "../components/UI"
 import { SkillSet } from "../components"
 
 type Props = {}

@@ -2,7 +2,7 @@
 
 import { poppins } from "../app/fonts";
 import { Project} from "../components";
-import { SectionTitle } from "../components/ui";
+import { SectionTitle } from "../components/UI";
 import {featuredprojects} from '../utils/data'
 
 type Props = {};

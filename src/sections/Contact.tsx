@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link"
-import { SectionTitle } from "../components/ui"
+import { SectionTitle } from "../components/UI"
 
 
 type Props = {}

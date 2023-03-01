@@ -1,5 +1,5 @@
 import { preahvihear } from './fonts'
-import { Footer, Navbar, SideSocial,SideNav } from '../components/ui'
+import { Footer, Navbar, SideSocial,SideNav } from '../components/UI'
 import './globals.css'
 
 

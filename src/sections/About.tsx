@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { SectionTitle } from "../components/ui";
+import { SectionTitle } from "../components/UI";
 import { motion } from "framer-motion";
 import { fadeIn, slideIn, wallDrop, zoomIn } from "../utils/motion";
 
