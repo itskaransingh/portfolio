@@ -20,6 +20,13 @@ export const metadata: Metadata = {
     { media: "(prefers-color-scheme: light)", color: "#170A28" },
     { media: "(prefers-color-scheme: dark)", color: "#170A28" },
   ],
+  authors: [
+    {
+      name: "itskaransingh",
+      url: "https://github.com/itskaransingh",
+    },
+  ],
+  creator: "itskaransingh",
   icons: {
     icon: siteConfig.logo,
     shortcut: siteConfig.logo,
@@ -38,13 +45,7 @@ export const metadata: Metadata = {
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [
-      {
-        url: siteConfig.ogImage,
-        width: 800,
-        height: 600,
-      },
-    ],
+    images: [siteConfig.ogImage],
   },
   robots: {
     index: true,
