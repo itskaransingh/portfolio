@@ -1,4 +1,4 @@
-import { Preahvihear,Plus_Jakarta_Sans,Poppins } from '@next/font/google';
+import { Preahvihear,Plus_Jakarta_Sans,Poppins } from "next/font/google";
 
 // If loading a variable font, you don't need to specify the font weight
 export const preahvihear = Preahvihear({

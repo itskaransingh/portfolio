@@ -35,6 +35,8 @@ const About = (props: Props) => {
               className="absolute   max-md:top-[-9.5px] top-[-11px] "
             >
               <Image
+
+                className="pointer-events-none  select-none"
                 src="/pic_scetch_2x.webp"
                 alt="my photo"
                 height={453}
@@ -45,7 +47,7 @@ const About = (props: Props) => {
             {/* Colorfull Image */}
             <Image
               src="/picpp_color.webp"
-              className=" rounded-xl"
+              className=" rounded-xl pointer-events-none  select-none"
               alt="my photo"
               height={438}
               width={379.93}

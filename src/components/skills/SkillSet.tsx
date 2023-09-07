@@ -32,7 +32,7 @@ const SkillSet = (props: Props) => {
             <div className="absolute inset-0  animate-pulse bg-logo-bg-radial "></div>
             <Image
               src="/svg/logo.svg"
-              className="drop-shadow-logo max-sm:h-16 max-sm:w-16"
+              className="drop-shadow-logo max-sm:h-16 pointer-events-none  select-none max-sm:w-16"
               alt="my skills"
               width={76}
               height={90}

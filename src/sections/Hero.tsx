@@ -31,7 +31,7 @@ const Hero = (props: Props) => {
           variants={slideIn("right", "tween", 0, 1)}>
             <Image
               src="/me.webp"
-              className=""
+              className="pointer-events-none  select-none"
               alt="me"
               priority
               height={300}

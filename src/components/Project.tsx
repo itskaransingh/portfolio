@@ -38,7 +38,7 @@ const Project = ({ fp }: { fp: FP }) => {
                   alt="mirror effect"
                   width={650}
                   height={200}
-                  className='absolute overflow-hidden inset-0 h-full w-full'
+                  className='absolute overflow-hidden pointer-events-none  select-none  inset-0 h-full w-full'
                 />
               {desc}
             </div>

@@ -21,7 +21,7 @@ export const socialLinks = [
   {
     id: 2,
     title: "Karan Singh's LinkedIn Profile",
-    link: "https://www.linkedin.com/in/karan-singh-726366259/",
+    link: "https://www.linkedin.com/in/itskaransingh/",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
