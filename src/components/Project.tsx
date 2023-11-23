@@ -50,7 +50,7 @@ const Project = ({ fp }: { fp: FP }) => {
               <Link
                 href={liveurl}
                 target="_blank"
-                className="lg:cursor-pointer h-10 w-10 flex justify-center  items-center rounded-full bg-secondary"
+                className="lg:cursor-pointer cursor-default h-10 w-10 flex justify-center  items-center rounded-full bg-secondary"
               >
                 <Image
                   src="/svg/livearrow.svg"
@@ -62,7 +62,7 @@ const Project = ({ fp }: { fp: FP }) => {
               <Link
                 href={github}
                 target="_blank"
-                className="lg:cursor-pointer scale-125 "
+                className="lg:cursor-pointer cursor-default scale-125 "
               >
                 <Image
                   src="/svg/github.svg"

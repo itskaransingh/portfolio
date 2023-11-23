@@ -5,6 +5,7 @@ import Link from "next/link"
 import { navLinks } from "../../lib/data"
 import {motion} from 'framer-motion'
 import { navVariants } from "../../lib/motion"
+import { cn } from "@/src/lib/utils"
 
 type Props = {}
 
@@ -24,7 +25,9 @@ const Navbar = (props: Props) => {
 
                {
                  navLinks.map(({text,url},i)=>(
-                   <Link  href={url} key={i} className={`${i===0?'hidden md:block':''}`}>
+                   <Link  href={url} key={i} className={cn(`lg:cursor-pointer cursor-default`, {
+                    'hidden md:block': i===0,
+                   })}>
                     <span className="">{text}</span>
                   </Link>
                 ))

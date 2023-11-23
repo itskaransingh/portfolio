@@ -9,7 +9,7 @@ const Footer = (props: Props) => {
       
 
       {socialLinks.map((sl)=>(
-        <Link href={sl.link} title={sl.title} target={'_blank'} key={sl.id} className='h-16 flex justify-center items-center fill-white md:cursor-pointer hover:fill-slate-400 w-16 '> 
+        <Link href={sl.link} title={sl.title} target={'_blank'} key={sl.id} className='h-16 flex justify-center items-center fill-white lg:cursor-pointer cursor-default hover:fill-slate-400 w-16 '> 
           {sl?.svg}
         </Link>
         ))}

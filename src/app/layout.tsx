@@ -85,7 +85,7 @@ export default function RootLayout({
       <body
         className={cn(
           poppins.variable,
-          "bg-primary overflow-x-hidden font-poppins antialiased scroll-smooth text-[#ffffff]"
+          "bg-primary  font-poppins antialiased scroll-smooth text-[#ffffff]"
         )}
       >
         <header className="fixed w-screen z-30 ">

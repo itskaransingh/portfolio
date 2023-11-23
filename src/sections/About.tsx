@@ -9,7 +9,7 @@ type Props = {};
 
 const About = (props: Props) => {
   return (
-    <section id="about" className="section flex flex-col ">
+    <section id="about" className="section overflow-x-hidden flex flex-col ">
       <SectionTitle>Who am i?</SectionTitle>
 
       <motion.div
@@ -25,13 +25,14 @@ const About = (props: Props) => {
           ></motion.span>
 
           {/* My Images  */}
-          <div className="relative   max-md:mx-auto w-3/4">
+          <div className="relative    max-md:mx-auto w-3/4">
             {/* Sketch image */}
             <motion.div
               initial="initial"
               whileHover={"drop"}
               whileInView="animate"
               variants={wallDrop}
+              viewport={{ once: true, amount: 0.5 }}
               className="absolute   max-md:top-[-9.5px] top-[-11px] "
             >
               <Image
