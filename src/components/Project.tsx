@@ -32,7 +32,7 @@ const Project = ({ project }: { project: FP }) => {
         <div className="lg:relative">
           <div className="lg:absolute lg:inset-0 ">
             <div
-              className={cn(`lg:p-6 p-3 shadow-xl  w-full  relative    !rounded-2xl lg:h-[165px]  from-transparent to-primary  overflow-hidden z-10  font-medium lower-glassmorphism  text-card`, {
+              className={cn(`lg:p-6 p-3 shadow-xl  w-full  relative    !rounded-2xl lg:min-h-[165px]  from-transparent to-primary  overflow-hidden z-10  font-medium lower-glassmorphism  text-card`, {
                 "bg-gradient-to-r lg:w-[600px]": isright,
                 "bg-gradient-to-l lg:right-[11.5rem] lg:w-[570px]": !isright,
               })}
@@ -51,7 +51,7 @@ const Project = ({ project }: { project: FP }) => {
                 !isright ? "lg:justify-end" : ""
               } gap-2 py-2 items-center`}
             >
-              <Link
+            {liveurl &&  <Link
                 href={liveurl}
                 target="_blank"
                 className="lg:cursor-pointer cursor-default h-10 w-10 flex justify-center  items-center rounded-full bg-secondary"
@@ -62,11 +62,11 @@ const Project = ({ project }: { project: FP }) => {
                   width={25}
                   height={25}
                 />
-              </Link>
+              </Link>}
             {github &&  <Link
                 href={github}
                 target="_blank"
-                className="lg:cursor-pointer cursor-default scale-125 "
+                className="lg:cursor-pointer pl-1 cursor-default scale-125 "
               >
                 <Image
                   src="/svg/github.svg"
@@ -100,7 +100,7 @@ const Project = ({ project }: { project: FP }) => {
             </div>
           </marquee>
           <div
-            className={`absolute bottom-0 rounded-tl-lg overflow-hidden right-0 w-[500px] h-[300px] ${
+            className={`absolute  bottom-0 rounded-lg overflow-hidden right-0 w-[500px] h-[300px] ${
               isright ? "right-0 max-md:left-0" : "left-0"
             }`}
           >
@@ -109,7 +109,7 @@ const Project = ({ project }: { project: FP }) => {
               alt={title}
               width={500}
               height={500}
-              className=" h-full w-full"
+              className=" h-full  w-full"
             />
           </div>
         </div>
