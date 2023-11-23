@@ -1,7 +1,7 @@
 import { Footer, Navbar, SideSocial, SideNav } from "../components/UI";
 import "./globals.css";
 import { AnalyticsWrapper } from "../components/analytics";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import { siteConfig } from "../lib/siteConfig";
 import { cn } from "../lib/utils";
 import { Poppins } from "next/font/google";
@@ -12,9 +12,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.siteUrl),
   alternates: {
     canonical: "/",
-    languages: {
-      "en-US": "/en-US",
-    },
   },
   keywords: [
     "karan singh",
@@ -23,17 +20,14 @@ export const metadata: Metadata = {
     "fullstack developer",
     "itskaransingh",
   ],
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#170A28" },
-    { media: "(prefers-color-scheme: dark)", color: "#170A28" },
-  ],
+
   authors: [
     {
-      name: "itskaransingh",
+      name: "Karan Singh",
       url: "https://github.com/itskaransingh",
     },
   ],
-  creator: "itskaransingh",
+  creator: "Karan Singh",
   icons: {
     icon: siteConfig.logo,
     shortcut: siteConfig.logo,
@@ -47,29 +41,35 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    locale: "en_US",
     url: siteConfig.siteUrl,
     title: siteConfig.title,
     description: siteConfig.description,
     siteName: siteConfig.title,
-    images: [siteConfig.ogImage],
+    images: siteConfig.ogImage,
   },
   robots: {
-    index: true,
+    index: false,
     follow: true,
+    nocache: true,
     googleBot: {
       index: true,
-      follow: true,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 1,
   },
 };
 
-export const poppins = Poppins({
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#170A28" },
+    { media: "(prefers-color-scheme: dark)", color: "#170A28" },
+  ],
+}
+
+const poppins = Poppins({
   weight: ["400", "600", "500", "700", "800"],
   subsets: ["latin"],
   variable: "--font-poppins",

@@ -19,7 +19,6 @@ const SectionTitle = ({children}:Props) => {
         strokeWidth={2}
         order={1}
         show={show}
-
       >
         <h2 className="section-heading text-center ">{children}</h2>
       </RoughNotation>

@@ -1,8 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../lib/motion";
+import Image from "next/image";
+import { fadeIn, slideIn, zoomIn } from "../lib/motion";
+import Link from "next/link";
 
 type Props = {};
 
@@ -86,7 +87,7 @@ const Hero = (props: Props) => {
             variants={fadeIn("right", "spring", 0.5 * 0.5)}
             className="md:cursor-pointer inline-block w-[120px]"
           >
-            <a href="mailto:karanrsingh2662006@gmail.com">
+            <Link  href="mailto:karanrsingh2662006@gmail.com" target="_blank">
               <svg
                 width="114 "
                 height="37"
@@ -103,7 +104,7 @@ const Hero = (props: Props) => {
                   fill="white"
                 />
               </svg>
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
       </motion.div>

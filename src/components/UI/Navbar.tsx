@@ -24,9 +24,9 @@ const Navbar = (props: Props) => {
 
                {
                  navLinks.map(({text,url},i)=>(
-                   <div key={i} className={`${i===0?'hidden md:block':''}`}>
-                    <a className="" href={url}>{text}</a>
-                  </div>
+                   <Link  href={url} key={i} className={`${i===0?'hidden md:block':''}`}>
+                    <span className="">{text}</span>
+                  </Link>
                 ))
               }
               </div>

@@ -20,7 +20,7 @@ const Contact = (props: Props) => {
           As a dev, I am driven by my love for coding and my desire for new challenges. If you have opportunities for collaboration or want to build something amazing, don&apos;t hesitate to contact me!
           </div>
           <button  className="bg-secondary border border-secondary hover:bg-transparent transition-all ease-in animate-pulse rounded-3xl px-10 text-lg py-3">
-            <Link href={'mailto:karanrsingh2662006@gmail.com'}>
+            <Link target="_blank" href={'mailto:karanrsingh2662006@gmail.com'}>
              Get In Touch !
             </Link>
         </button>
