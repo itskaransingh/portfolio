@@ -82,15 +82,24 @@ export const navLinks = [
 export const featuredprojects = [
   {
     srno: 1,
+    title: "MotoGin CRM - A Easy CRM",
+    img: "/projects/motogin-crm.webp",
+    desc: "I had the privilege of developing a cutting-edge CRM system to streamline their operations and enhance customer experience. Leveraging Next.js in the frontend and MongoDB in the backend, we've created a robust and dynamic solution tailored to MotoGin's unique needs like Lead Requirements, car model, comments etc.",
+    toolsAndTech: ["NextJs", "Shadcn UI", "Tailwind CSS", "Clerk", "Prisma", "MongoDB"],
+    liveurl: "https://crmwithease.vercel.app/",
+    github: null,
+  },
+  {
+    srno: 2,
     title: "LingoBot - Learn Languages with AI",
     img: "/projects/lingobot.webp",
     desc: "Learn languages from LingoBot through conversations with AI. LingoBot is a chatbot made using OpenAI GPT-3.5 api for the purpose of conversing in the chats with you in the language of your choice so that you can learn the language by the conversation.",
-    toolsAndTech: ["NextJs 13", "OpenAI", "Tailwind CSS", "Prisma", "PlanetScale", "NextAuth"],
+    toolsAndTech: ["NextJs", "OpenAI", "Tailwind CSS", "Prisma", "PlanetScale", "NextAuth"],
     liveurl: "https://lingobot.chat/",
     github: "https://github.com/itskaransingh/LingoBot",
   },
   {
-    srno: 2,
+    srno: 3,
     title: "Picstack - A Social Media Web App",
     img: "/projects/picstack.webp",
     desc: "PicStack - A Social Media Web App Picstack is a social media web app in which a user can login with google oauth2.0 and can upload posts, delete posts and can also like and comment on posts of others and many other functionalities",
@@ -99,7 +108,7 @@ export const featuredprojects = [
     github: "https://github.com/itskaransingh/picstack",
   },
   {
-    srno: 3,
+    srno: 4,
     title: "Cryptoverse - Statistics,News regarding Cryptocurrencies",
     img: "/projects/cryptoverse.webp",
     desc: "Cryptoverse is basically a platform in which a user can see live crypto stats , learn about various cryptocurrencies and can watch news of a particular cryptocurrencies . This Application is made with the help of react , redux and antdesign",

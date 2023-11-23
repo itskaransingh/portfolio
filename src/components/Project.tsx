@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { FP } from "../sections/Projects";
+import { cn } from "../lib/utils";
 
 const Project = ({ project }: { project: FP }) => {
   const { desc, github, img, toolsAndTech, liveurl, srno, title } = project;
@@ -29,18 +30,19 @@ const Project = ({ project }: { project: FP }) => {
           </div>
         </div>
         <div className="lg:relative">
-          <div className="lg:absolute lg:inset-0">
+          <div className="lg:absolute lg:inset-0 ">
             <div
-              className={`lg:p-6 p-3 shadow-xl  relative ${
-                isright ? "" : "lg:right-48"
-              }  lg:w-[600px] !rounded-2xl lg:h-[165px]   overflow-hidden z-10  font-medium lower-glassmorphism relative text-card`}
+              className={cn(`lg:p-6 p-3 shadow-xl  w-full  relative    !rounded-2xl lg:h-[165px]  from-transparent to-primary  overflow-hidden z-10  font-medium lower-glassmorphism  text-card`, {
+                "bg-gradient-to-r lg:w-[600px]": isright,
+                "bg-gradient-to-l lg:right-[11.5rem] lg:w-[570px]": !isright,
+              })}
             >
               <Image
                 src="/extras/projectdesc_gm.webp"
                 alt="mirror effect"
                 width={650}
                 height={200}
-                className="absolute  overflow-hidden pointer-events-none  select-none  inset-0 h-full w-full"
+                className="absolute   overflow-hidden pointer-events-none  select-none  inset-0 h-full w-full"
               />
               {desc}
             </div>
@@ -61,7 +63,7 @@ const Project = ({ project }: { project: FP }) => {
                   height={25}
                 />
               </Link>
-              <Link
+            {github &&  <Link
                 href={github}
                 target="_blank"
                 className="lg:cursor-pointer cursor-default scale-125 "
@@ -72,10 +74,9 @@ const Project = ({ project }: { project: FP }) => {
                   width={37}
                   height={37}
                 />
-              </Link>
+              </Link>}
             </div>
           </div>
-          <div></div>
         </div>
       </div>
 
