@@ -1,9 +1,10 @@
-import { preahvihear } from './fonts'
-import { Footer, Navbar, SideSocial, SideNav } from '../components/UI'
-import './globals.css'
-import { AnalyticsWrapper } from '../components/analytics'
-import { Metadata } from 'next'
-import { siteConfig } from '../utils/siteConfig'
+import { Footer, Navbar, SideSocial, SideNav } from "../components/UI";
+import "./globals.css";
+import { AnalyticsWrapper } from "../components/analytics";
+import { Metadata } from "next";
+import { siteConfig } from "../lib/siteConfig";
+import { cn } from "../lib/utils";
+import { Poppins } from "next/font/google";
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -15,7 +16,13 @@ export const metadata: Metadata = {
       "en-US": "/en-US",
     },
   },
-  keywords: ["karan singh", "thekaransingh", "portfolio", "fullstack developer", "itskaransingh"],
+  keywords: [
+    "karan singh",
+    "thekaransingh",
+    "portfolio",
+    "fullstack developer",
+    "itskaransingh",
+  ],
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#170A28" },
     { media: "(prefers-color-scheme: dark)", color: "#170A28" },
@@ -56,39 +63,46 @@ export const metadata: Metadata = {
     },
   },
   viewport: {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
     maximumScale: 1,
   },
-}
+};
 
+export const poppins = Poppins({
+  weight: ["400", "600", "500", "700", "800"],
+  subsets: ["latin"],
+  variable: "--font-poppins",
+});
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={preahvihear.className}>
-      <body className='bg-primary scroll-smooth text-[#ffffff]'>
-        <header className='fixed w-screen z-30 '>
+    <html lang="en">
+      <body
+        className={cn(
+          poppins.variable,
+          "bg-primary overflow-x-hidden font-poppins antialiased scroll-smooth text-[#ffffff]"
+        )}
+      >
+        <header className="fixed w-screen z-30 ">
           <Navbar />
         </header>
         <aside>
           <SideNav />
         </aside>
-        <main>
-          {children}
-
-        </main>
+        <main className="">{children}</main>
         <aside>
           <SideSocial />
         </aside>
-        <footer className='flex justify-center items-center h-20'>
+        <footer className="flex justify-center items-center h-20">
           <Footer />
         </footer>
         <AnalyticsWrapper />
       </body>
     </html>
-  )
+  );
 }

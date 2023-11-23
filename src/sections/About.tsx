@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { SectionTitle } from "../components/UI";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, wallDrop, zoomIn } from "../utils/motion";
+import { fadeIn, slideIn, wallDrop, zoomIn } from "../lib/motion";
 
 type Props = {};
 

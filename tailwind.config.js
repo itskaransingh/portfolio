@@ -1,3 +1,6 @@
+import { fontFamily } from "tailwindcss/defaultTheme";
+
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}",],
@@ -14,6 +17,9 @@ module.exports = {
         "info":'#9857D3',
         //project-card
         "card":'#CCD6F6'
+      },
+      fontFamily:{
+        poppins: ["var(--font-poppins)", ...fontFamily.sans],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(50% 50% at 50% 50%, #763CAC 0%, rgba(50, 15, 133, 0) 100%);',  

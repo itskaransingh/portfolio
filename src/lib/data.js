@@ -91,7 +91,7 @@ export const featuredprojects = [
   },
   {
     srno: 2,
-    title: "Crytoverse - Statistics,News regarding Cryptocurrencies",
+    title: "Cryptoverse - Statistics,News regarding Cryptocurrencies",
     img: "/projects/cryptoverse.webp",
     desc: "Cryptoverse is basically a platform in which a user can see live crypto stats , learn about various cryptocurrencies and can watch news of a particular cryptocurrencies . This Application is made with the help of react , redux and antdesign",
     lang: ["Javascript", "React", "Rapid Api", "Ant Design", "Vite"],

@@ -10,7 +10,7 @@ const SectionTitle = ({children}:Props) => {
   const [show, setshow] = useState<boolean>(false)
   return (
     <motion.div
-    onViewportEnter={(x)=>setshow(x as any)}
+    onViewportEnter={(x)=>setshow(x?.isIntersecting || false)}
     viewport={{ once: true, amount: 0.25 }}
     className="md:my-6 my-4  text-center">
     <RoughNotation

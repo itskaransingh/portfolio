@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { navLinks } from "../../utils/data"
+import { navLinks } from "../../lib/data"
 
 
 type Props = {}

@@ -2,21 +2,19 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { fadeIn, slideIn, staggerContainer, zoomIn } from "../utils/motion";
+import { fadeIn, slideIn, staggerContainer, zoomIn } from "../lib/motion";
 
 type Props = {};
 
 const Hero = (props: Props) => {
   return (
-    <section className="section    flex items-center">
+    <section className="section max-md:pt-20  flex items-center">
       <motion.div
-    initial="hidden"
-    whileInView="show"
-    viewport={{ once: true, amount: 0.25 }}
-    
-
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
         // viewport={{ once: true, amount: 0.25 }}
-     
+
         className="flex flex-col  justify-between h-full w-full items-center md:flex-row-reverse"
       >
         <div className="relative md:h-[431px] md:w-[385px] h-[400px] w-[360px] flex justify-center items-center">
@@ -27,8 +25,7 @@ const Hero = (props: Props) => {
           ></motion.div>
 
           {/* Hero Image */}
-          <motion.div 
-          variants={slideIn("right", "tween", 0, 1)}>
+          <motion.div variants={slideIn("right", "tween", 0, 1)}>
             <Image
               src="/me.webp"
               className="pointer-events-none  select-none"
@@ -43,24 +40,24 @@ const Hero = (props: Props) => {
         {/* Hero Text Content */}
 
         <motion.div
-          variants={slideIn("left", "spring",0* 0.5)}
+          variants={slideIn("left", "spring", 0 * 0.5)}
           className="flex flex-col gap-1"
         >
-          <div className="leading-8 pb-2">
+          <div className="leading-8  ">
             <motion.span
-              variants={fadeIn("right", "spring",0* 0.5)}
+              variants={fadeIn("right", "spring", 0 * 0.5)}
               className="text-lg"
             >
               Hi my name is
             </motion.span>
             <motion.h1
-              variants={fadeIn("right", "spring",0.1* 0.5)}
+              variants={fadeIn("right", "spring", 0.1 * 0.5)}
               className="text-secondary text-5xl"
             >
               Karan Singh
             </motion.h1>
             <motion.span
-              variants={fadeIn("right", "spring",0.2* 0.5)}
+              variants={fadeIn("right", "spring", 0.2 * 0.5)}
               className="text-[17px] "
             >
               A Full Stack Developer who
@@ -68,7 +65,7 @@ const Hero = (props: Props) => {
           </div>
           <div className="pb-4">
             <motion.div
-              variants={fadeIn("right", "spring",0.3* 0.5)}
+              variants={fadeIn("right", "spring", 0.3 * 0.5)}
               className="text-4xl pb-1"
             >
               Judges a book <br /> by its{" "}
@@ -76,8 +73,7 @@ const Hero = (props: Props) => {
               ...
             </motion.div>
             <motion.span
-            
-              variants={fadeIn("right", "spring",0.4* 0.5)}
+              variants={fadeIn("right", "spring", 0.4 * 0.5)}
               className="text-sm "
             >
               Because if the cover does not impress you what else can?
@@ -87,9 +83,8 @@ const Hero = (props: Props) => {
           {/* Contact btn */}
 
           <motion.div
-           
-            variants={fadeIn("right", "spring",0.5* 0.5)}
-            className="md:cursor-pointer"
+            variants={fadeIn("right", "spring", 0.5 * 0.5)}
+            className="md:cursor-pointer inline-block w-[120px]"
           >
             <a href="mailto:karanrsingh2662006@gmail.com">
               <svg

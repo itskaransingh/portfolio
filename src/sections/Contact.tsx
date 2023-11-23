@@ -15,9 +15,9 @@ const Contact = (props: Props) => {
      </SectionTitle>
    
         <div className="flex flex-col text-center justify-center gap-4 items-center">
-          <div className="text-secondary text-3xl">Let`&apos;s be awesome together!</div>
+          <div className="text-secondary text-3xl">Let&apos;s be awesome together!</div>
           <div className="line-clamp-4 max-w-[500px]  mx-auto">
-          As a dev, I am driven by my love for coding and my desire for new challenges. If you have opportunities for collaboration or want to build something amazing, don`&apos;t hesitate to contact me!
+          As a dev, I am driven by my love for coding and my desire for new challenges. If you have opportunities for collaboration or want to build something amazing, don&apos;t hesitate to contact me!
           </div>
           <button  className="bg-secondary border border-secondary hover:bg-transparent transition-all ease-in animate-pulse rounded-3xl px-10 text-lg py-3">
             <Link href={'mailto:karanrsingh2662006@gmail.com'}>
