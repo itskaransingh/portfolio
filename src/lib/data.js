@@ -37,7 +37,7 @@ export const socialLinks = [
   {
     id: 3,
     title: "Check Karan Singh's Twitter",
-    link: "https://twitter.com/KaranRSingh26",
+    link: "https://twitter.com/its_karansingh",
     svg: (
       <svg
         viewBox="0 0 24 24"
