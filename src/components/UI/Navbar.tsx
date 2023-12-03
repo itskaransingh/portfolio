@@ -15,8 +15,8 @@ const Navbar = (props: Props) => {
     variants={navVariants}
     initial="hidden"
     whileInView="show"
-    className={'relative  lower-glassmorphism bg-nav  h-16 shadow-md  max-md:px-[23px] flex items-center justify-center w-screen'}>
-        <div className="flex justify-between container  items-center">
+    className={'relative  lower-glassmorphism bg-nav  h-16 shadow-md    px-[23px] flex items-center justify-center w-screen'}>
+        <div className="flex max-w-6xl  mx-auto justify-between container  items-center">
           <Link href={'/'}>
             <Image src='/svg/logo.svg'  alt="my logo" height={28} width={28}/>
           </Link>
@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
 
                {
                  navLinks.map(({text,url},i)=>(
-                   <Link  href={url} key={i} className={cn(`lg:cursor-pointer cursor-default`, {
+                   <Link  href={url} key={i} className={cn(`lg:cursor-pointer text-sm cursor-default`, {
                     'hidden md:block': i===0,
                    })}>
                     <span className="">{text}</span>

@@ -56,10 +56,10 @@ export const socialLinks = [
 ];
 
 export const navLinks = [
-  {
-    url: "#",
-    text: "Welcome",
-  },
+  // {
+  //   url: "#",
+  //   text: "Welcome",
+  // },
   {
     url: "#about",
     text: "Who am i?",
