@@ -88,6 +88,7 @@ export const featuredprojects = [
     toolsAndTech: ["React Native", "Expo", "RapidAPI", "Coustom Hooks"],
     liveurl: null,
     github: "https://github.com/itskaransingh/openrecruit",
+    date: "2025-07-11",
   },
   {
     srno: 2,
@@ -97,6 +98,8 @@ export const featuredprojects = [
     toolsAndTech: ["NextJs", "Shadcn UI", "Tailwind CSS", "Clerk", "Prisma", "MongoDB"],
     liveurl: "https://crmwithease.vercel.app/",
     github: null,
+    date: "2025-07-11",
+
   },
   {
     srno: 3,
@@ -106,6 +109,8 @@ export const featuredprojects = [
     toolsAndTech: ["NextJs", "OpenAI", "Tailwind CSS", "Prisma", "PlanetScale", "NextAuth"],
     liveurl: "https://lingobot.chat/",
     github: "https://github.com/itskaransingh/LingoBot",
+    date: "2025-07-11",
+
   },
   {
     srno: 4,
@@ -115,6 +120,8 @@ export const featuredprojects = [
     toolsAndTech: ["Javascript", "React", "Sanity", "Tailwind CSS","Vite"],
     liveurl: "https://picstack26.netlify.app",
     github: "https://github.com/itskaransingh/picstack",
+    date: "2025-07-11",
+
   },
   {
     srno: 5,
@@ -124,6 +131,8 @@ export const featuredprojects = [
     toolsAndTech: ["Javascript", "React", "Rapid Api", "Ant Design", "Vite"],
     liveurl: "https://cryptoverse26.vercel.app/",
     github: "https://github.com/itskaransingh/cryptoverse",
+    date: "2025-07-11",
+
   },
   // {
   //   srno: 3,
