@@ -60,10 +60,10 @@ export const navLinks = [
   //   url: "#",
   //   text: "Welcome",
   // },
-  {
-    url: "#about",
-    text: "Who am i?",
-  },
+  // {
+  //   url: "#about",
+  //   text: "Who am i?",
+  // },
   {
     url: "#skills",
     text: "Skills",
